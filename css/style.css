@@ -186,7 +186,18 @@ article.tour-date {
 }
 
 @media (max-width: 900px) {
+    html {
+        font-size: 24px;
+    }
     .central-section {
         padding: 0 24px;
+    }
+    #mc_embed_signup_scroll {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+    }
+    input[type="email"] {
+        flex-basis: 100%;
     }
 }
