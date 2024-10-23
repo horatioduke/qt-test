@@ -1,0 +1,192 @@
+/*
+Ello! This is the stylesheet for quiettongues.com
+*/
+
+@font-face {
+    font-family: 'Syne';
+    src: url('../assets/fonts/Syne/static/Syne-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url('../assets/fonts/Courier_Prime/CourierPrime-Regular.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+:root {
+    --qt-white: #F2F2F2;
+    --qt-black: #262626;
+    --qt-accent: #FF6F61;
+}
+
+html {
+    background: var(--qt-black);
+    color: var(--qt-white);
+    font-family: 'Courier Prime';
+    font-size: 18px;
+}
+
+button:hover, input[type="submit"] {
+    cursor: pointer;
+}
+
+button, input[type="submit"] {
+    padding: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--qt-accent);
+    position: relative;
+  }
+  
+ul a::after, p a::after, span a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--qt-accent);
+    transition: width 0.3s ease;
+}
+
+ul a:hover::after, p a:hover::after, span a:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--qt-accent);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne';
+    text-transform: uppercase;
+}
+
+#hero video {
+    width: 100%;
+    overflow-y: hidden;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.accented {
+    color: var(--qt-accent);
+}
+
+.central-section {
+    max-width: 900px;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--qt-black);
+    padding: 6px 36px 30px 36px;
+    transform: translate(-50%, -50%);
+}
+
+#welcome h1 {
+    font-size: 200%;
+}
+
+#welcome h2 {
+    font-size: 240%;
+}
+
+.highlighted-release {
+    color: var(--qt-accent);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin: 0 24px;
+}
+
+#newsletter {
+    position: relative;
+    top: -6px;
+    background-color: var(--qt-white);
+    background-image: url('../assets/graphics/pot-pourri.png');
+    background-size: auto 100%;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+
+label[for="mce-EMAIL"] {
+    background-color: var(--qt-black);
+    padding: 10px;
+}
+
+#newsletter form {
+    margin: 0 auto;
+    padding: 24px 0;
+    line-height: 1;
+}
+
+input[type="email"] {
+    min-width: 300px;
+    padding: 6px;
+}
+
+.newsletter-signup-label {
+    font-family: 'Syne';
+    text-transform: uppercase;
+}
+
+#mc_embed_signup_scroll {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tours {
+    margin: 60px auto 0;
+}
+
+article.tour-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bio {
+    margin: 60px auto 0;
+}
+
+#foot {
+    margin: 60px auto 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.separator {
+    margin: 0 24px;
+}
+
+@media (max-width: 900px) {
+    .central-section {
+        padding: 0 24px;
+    }
+}
