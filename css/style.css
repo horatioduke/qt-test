@@ -29,10 +29,6 @@ html {
     font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
-body {
-    font-size: 1rem; /* Don't touch - this inherits and scales with html's base size */
-}
-
 button:hover, input[type="submit"] {
     cursor: pointer;
 }
