@@ -26,7 +26,7 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(24px, 2vw, 30px);
 }
 
 button:hover, input[type="submit"] {
@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .central-section-width {
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 #welcome {
@@ -119,7 +119,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #newsletter {
     position: relative;
-    top: -6px;
+    top: -12px;
     background-color: var(--qt-white);
     background-image: url('../assets/graphics/pot-pourri.png');
     background-size: auto 100%;
@@ -185,8 +185,8 @@ article.tour-date {
     margin: 0 24px;
 }
 
-@media (max-width: 900px) {
-    .central-section {
+@media (max-width: 1200px) {
+    .central-section-width {
         padding: 0 24px;
     }
     #mc_embed_signup_scroll {
