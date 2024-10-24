@@ -26,12 +26,12 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: 30px;
+    font-size: 16px;
 }
 
 button, input[type="submit"] {
-    -webkit-appearance: none;
-    appearance: none;
+    -webkit-appearance: none; /* overrides default styles in iOS */
+    appearance: none; /* overrides default styles in iOS */
     border-radius: 0;
     padding: 6px;
     background-color: var(--qt-white);
@@ -185,6 +185,9 @@ article.tour-date {
 }
 
 @media (max-width: 1200px) {
+    html {
+        font-size: 36px;
+    }
     .central-section-width {
         padding: 0 24px;
     }
