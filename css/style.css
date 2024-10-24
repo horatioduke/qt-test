@@ -26,7 +26,7 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: 16px;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
 
 button, input[type="submit"] {
@@ -185,11 +185,11 @@ article.tour-date {
 }
 
 @media (max-width: 1200px) {
-    html {
-        font-size: 36px;
-    }
     .central-section-width {
         padding: 0 24px;
+    }
+    #welcome {
+        width: 100%;
     }
     #mc_embed_signup_scroll {
         display: flex;
