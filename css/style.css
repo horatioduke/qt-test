@@ -26,7 +26,7 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: 18px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 button:hover, input[type="submit"] {
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--qt-accent);
 }
 
-.central-section {
+.central-section-width {
     max-width: 900px;
 }
 
@@ -186,9 +186,6 @@ article.tour-date {
 }
 
 @media (max-width: 900px) {
-    html {
-        font-size: 24px;
-    }
     .central-section {
         padding: 0 24px;
     }
