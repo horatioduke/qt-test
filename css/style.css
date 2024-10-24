@@ -26,7 +26,7 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: clamp(2rem, 4vw, 1.5rem);
+    font-size: clamp(2rem, 4vw, 2rem);
 }
 
 button, input[type="submit"] {
