@@ -26,7 +26,11 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+body {
+    font-size: 1rem; /* Don't touch - this inherits and scales with html's base size */
 }
 
 button:hover, input[type="submit"] {
@@ -94,11 +98,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #welcome h1 {
-    font-size: 200%;
+    font-size: 180%;
 }
 
 #welcome h2 {
-    font-size: 240%;
+    font-size: 200%;
 }
 
 .highlighted-release {
