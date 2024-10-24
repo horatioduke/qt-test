@@ -30,6 +30,8 @@ html {
 }
 
 button, input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
     padding: 6px;
     background-color: var(--qt-white);
     color: var(--qt-black);
