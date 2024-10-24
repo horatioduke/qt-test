@@ -26,15 +26,17 @@ html {
     background: var(--qt-black);
     color: var(--qt-white);
     font-family: 'Courier Prime';
-    font-size: clamp(24px, 2vw, 30px);
-}
-
-button:hover, input[type="submit"] {
-    cursor: pointer;
+    font-size: 30px;
 }
 
 button, input[type="submit"] {
     padding: 6px;
+    background-color: var(--qt-white);
+    color: var(--qt-black);
+}
+
+button:hover, input[type="submit"]:hover {
+    cursor: pointer;
 }
 
 a {
@@ -93,14 +95,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
 }
 
-#welcome h1 {
-    font-size: 180%;
-}
-
-#welcome h2 {
-    font-size: 200%;
-}
-
 .highlighted-release {
     color: var(--qt-accent);
 }
@@ -127,15 +121,15 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: repeat-x;
 }
 
-label[for="mce-EMAIL"] {
-    background-color: var(--qt-black);
-    padding: 10px;
-}
-
 #newsletter form {
     margin: 0 auto;
     padding: 24px 0;
     line-height: 1;
+}
+
+label[for="mce-EMAIL"] {
+    background-color: var(--qt-black);
+    padding: 10px;
 }
 
 input[type="email"] {
