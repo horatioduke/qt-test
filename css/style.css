@@ -35,6 +35,8 @@ button, input[type="submit"] {
     padding: 6px;
     background-color: var(--qt-white);
     color: var(--qt-black);
+    font-weight: 200;
+    border: solid 1px var(--qt-black);
 }
 
 button:hover, input[type="submit"]:hover {
